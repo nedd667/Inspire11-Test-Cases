@@ -1,0 +1,16 @@
+{
+  "name": "new-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testDemo": "testcafe chrome Tests/inspire11.test.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^3.0.1"
+  }
+}
