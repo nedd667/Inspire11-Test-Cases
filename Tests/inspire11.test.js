@@ -9,13 +9,16 @@ fixture`Testing a Web App`
 const careerPage = new CareerPage();
 const jobsPage = new JobsPage();
 
+
 test('Test Case One',async (t) => {
+  await t.maximizeWindow();
+
   await careerPage.clickCareersLink();
   
   const currentUrl = await careerPage.getCurrentUrl();
   await t.expect(currentUrl).contains('/careers');
 
-  
+
   await careerPage.clickViewJobOpeningsButton();
 
   

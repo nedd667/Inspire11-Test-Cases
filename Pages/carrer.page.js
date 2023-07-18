@@ -14,6 +14,6 @@ export default class CareerPage {
     return await t.eval(() => window.location.href);
   }
   async clickViewJobOpeningsButton() {
-    await t.click(this.viewJobOpeningsButton);
+    await t.click(this.viewJobOpeningsButton).maximizeWindow();
   }
 }
