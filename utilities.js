@@ -5,5 +5,7 @@
       departmentOption: 'Tech',
       countryOption: 'North Macedonia',
       validateJobs: "0 jobs",
-      careersUrl: "/careers"
+      URL: "https://www.inspire11.com/",
+      careersUrl: "/careers",
+      navOptions: ["'Careers','Work']"]
     };
