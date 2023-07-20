@@ -1,9 +1,9 @@
-import { Selector,ClientFunction } from 'testcafe';
+import { Selector } from 'testcafe';
 import CareerPage from '../../Pages/carrer.page';
 import JobsPage from '../../pages/jobs.page';
 import {userData} from '../../utilities'
 import Nav from '../../pom/components/cilickNav';
-import CaseStudies from '../../pages/work.page';
+import HealthcarePage from '../../pages/work.page';
 
 fixture`Testing a Web App`
   .page(userData.URL);
@@ -11,8 +11,7 @@ fixture`Testing a Web App`
 const careerPage = new CareerPage();
 const jobsPage = new JobsPage();
 const nav = new Nav()
-const caseStudies = new CaseStudies()
-
+const healthcarePage = new HealthcarePage()
 
 test.meta({ testID: 'Case-1' })('Test Case One',async (t) => {
   await t.maximizeWindow();
@@ -41,10 +40,18 @@ test.meta({ testID: 'Case-1' })('Test Case One',async (t) => {
 
 test.meta({ testID: 'Case-2' })('Test Case Two',async (t) => {
   await t.maximizeWindow();
-  // await work.clickWorkLink()
   await nav.clickOption('Work')
 
- 
+  
+  const { titles, tags } = await healthcarePage.getHealthcareCards();
+  for (let i = 0; i < titles.length; i++) {
+    console.log('TITLE:', titles[i]);
+    console.log('TAG:', tags[i]);
 
-  console.log('Nedim')
-})
+  }
+
+});
+
+
+
+
