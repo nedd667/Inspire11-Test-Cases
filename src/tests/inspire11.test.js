@@ -1,9 +1,9 @@
 import { Selector } from 'testcafe';
-import CareerPage from '../../Pages/carrer.page';
-import JobsPage from '../../pages/jobs.page';
+import CareerPage from '../../pom/pages/carrer.page';
+import JobsPage from '../../pom/pages/jobs.page';
 import {userData} from '../../utilities'
 import Nav from '../../pom/components/cilickNav';
-import HealthcarePage from '../../pages/work.page';
+import HealthcarePage from '../../pom/pages/work.page';
 
 fixture`Testing a Web App`
   .page(userData.URL);

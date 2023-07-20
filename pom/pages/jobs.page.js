@@ -1,6 +1,6 @@
 import { Selector, t } from 'testcafe';
-import Dropdown from '../pom/components/Dropdown';
-import {userData} from '../utilities'
+import Dropdown from '../components/Dropdown';
+import { userData } from '../../utilities';
 
 
 export default class JobsPage {
