@@ -1,8 +1,0 @@
-{
-    "skipJsErrors": true,
-    "disableNativeAutomation": "true",
-    "speed": 0.5,
-    "disablePageReloads": true
-    
-    
-}
