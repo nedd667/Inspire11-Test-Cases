@@ -3,7 +3,7 @@ module.exports=
     skipJsErrors : true,
     disableNativeAutomation : "true",
     disablePageReloads : true,
-    speed : 0.8,
+    speed : 0.6,
     hooks:{
         test:{
             before:

@@ -8,6 +8,6 @@ export default class ValidateEmail {
    
   }
   async validateEmailContent(){
-    await t.expect(this.validateEmail.textContent).contains(userData.validateEmail);
+    await t.expect(this.validateEmail.textContent).contains(userData.validateEmailAlert);
   }
 }

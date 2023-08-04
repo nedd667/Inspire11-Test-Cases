@@ -1,15 +1,10 @@
 import { Selector, t } from 'testcafe';
 
-export default class NavLinks {
+export default class JobOppening {
   constructor() {
     this.linkOption = Selector('a');
   }
 
-  async clickOption(options) {
-    const option =  this.linkOption.withText(options)
-    return await t.click(option)
-  }
-  
 
   async getCurrentUrl() {
     return await t.eval(() => window.location.href);

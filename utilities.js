@@ -4,12 +4,12 @@
       validateJobs: "0 jobs",
       URL: "https://www.inspire11.com/",
       careersUrl: "/careers",
-      navOptions1: 'Careers',
-      navOptions2: 'Work',
+      navOptionsCarrer: 'Careers',
+      navOptionsWork: 'Work',
       SDET: 'Software Development Engineer in Test (SDET)',
       applyBtn: 'Apply Now',
       filepath: "C:/Users/nedim/OneDrive/Desktop/inspire11mk-internship-nedim-asani/src/files/Nedim.pdf",
-      validateEmail: "Email is required."
+      validateEmailAlert: "Email is required."
     };
 
  
